@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réécrire avec les fonction fléchées</title>
+</head>
+<body>
+    <script>
+        console.log("la fonction:");
+        function ask(question,yes,no) {
+          if (confirm(question)) {yes();
+            
+          } else { no();
+            
+          }  
+        }
+ask("Do you agree?",
+function(){alert("You agree.");},
+function(){alert("You canceled the execution.");},
+);
+
+// fonctions fléchées :
+console.log("fonctions fléchées");
+ ask => (question,yes,no) 
+          (confirm(question))?yes():no();
+                  
+        
+ask("Do you agree?",
+() => {alert("You agree.");},
+() => {alert("You canceled the execution.");},
+);
+
+    </script>
+</body>
+</html>

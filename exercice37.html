@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonction pow(x,n)</title>
+</head>
+<body>
+    <script>
+        function pow(x,n) {
+            x = Number(prompt("Entrez un nombre entier :"));
+            n =Number(prompt("Entrez un multiple :"))
+            let multi = x;
+            for (let i = 1; i < n ; i++) {
+               multi *= x;            
+            }
+            return multi;
+     
+        }
+        console.log(pow());
+        
+        // console.log(pow(3,2));
+        // console.log(pow(3,3));
+        // console.log(pow(1,100));
+        //test  : 9, 27, 1
+        
+    </script>
+</body>
+</html>

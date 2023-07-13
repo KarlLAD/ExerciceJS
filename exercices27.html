@@ -1,0 +1,34 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quelles valeurs sont affichés par la boucle "for"</title>
+  </head>
+  <body>
+    <script>
+      //première boucle :   postfixe i++
+
+      for (let i = 0; i < 5; i++) {
+        alert(i);
+      }
+
+      //solution :valeurs affichés : 0, 1, 2, 3, 4
+      // On a  5 valeurs.
+
+      // deuxième boucle :préfixe ++i
+
+        for (let i = 0; i < 5; ++i) {
+        alert(i);
+      }
+      /* solution : valeurs affichés : 0, 1, 2, 3, 4
+       * *On a  5val eurs.
+       *   Les deux boucles affichent les mêmes
+       * valeurs dans l'alert.
+       *
+       */
+    </script>
+  </body>
+</html>

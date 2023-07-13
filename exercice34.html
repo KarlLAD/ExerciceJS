@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Est-ce que "else" est requis</title>
+</head>
+<body>
+    <script>
+
+//
+        function checkAge(age) {
+            age = Number( prompt("Entrez votre age :"));
+            if (age>18) {
+                return true;
+                
+            } else {
+                //...
+                return confirm('Did parents allow you?');
+                
+            }
+            
+        }
+        console.log(checkAge());
+
+// la fonction ne fonctionnement pas différemment
+
+function checkAge(age) {
+            age = Number( prompt("Entrez votre age :"));
+            if (age>18) {
+                return true;
+                
+            } 
+                //...
+                return confirm('Did parents allow you?');
+                
+        }
+        console.log(checkAge());
+
+        /*  il n'existe pas de différence 
+        *   dans le compotrement de ces deux variantes
+        */
+    </script>
+</body>
+</html>

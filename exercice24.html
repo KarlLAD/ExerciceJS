@@ -1,0 +1,35 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check the login</title>
+  </head>
+  <body>
+    <script>
+      let login = prompt("Entrez le login :");
+
+      if (login == "Admin") 
+      {
+        let password = prompt("Entrez le mot de passe :");
+        if (password == "TheMaster")
+            {
+          alert("Welcome!");
+            } else if (password == '')
+                {
+                    alert("Canceled");
+                } 
+                     else {
+                        alert("Wrong password");
+                        }
+      } else if (login == '')
+         {
+        alert("Canceled");
+            } else {
+        alert("I don't know you");
+      }
+    </script>
+  </body>
+</html>

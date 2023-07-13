@@ -1,0 +1,29 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vérifiez à l'extérieur la plage</title>
+  </head>
+  <body>
+    <script>
+      let age = prompt("Entrez un âge?");
+
+      // console.log(typeof age);
+      // première variante
+      alert(" première variante");
+      !(Number(age) >= 14 && Number(age) <= 90)
+        ? alert("Vous êtes l'extérieur de la plage d'âge.")
+        : alert("Vous êtes dans la plage d'âge.");
+
+        // deuxième variante
+        alert("euxième variante");
+        (Number(age) <= 14 && Number(age) >= 90)
+        ? alert("Vous êtes l'extérieur de la plage d'âge.")
+        : alert("Vous êtes dans la plage d'âge.");
+
+    </script>
+  </body>
+</html>

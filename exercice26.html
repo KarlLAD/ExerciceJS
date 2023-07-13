@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quelles valeurs affiche la boucle while</title>
+</head>
+<body>
+    <script>
+        //première boucle : préfixe ++i
+        let i = 0;
+        while (++i < 5) {
+            alert(i);
+        }
+        //solution :valeurs affichés : 1, 2, 3, 4
+        // On a 4 valeurs.
+
+
+        // deuxième boucle : postfixe i++
+        i = 0 ;
+        while (i++ < 5) {
+            alert(i);
+        }
+        /* solution : valeurs affichés : 1, 2, 3, 4, 5
+        * *On a 5 valeurs.
+        *   Les deux boucles n'affichent pas les mêmes 
+        * valeurs dans l'alert.
+        * 
+        */
+
+    </script>
+</body>
+</html>

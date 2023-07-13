@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Une question à propos de "if"</title>
+</head>
+<body>
+    <script>
+        if (-1 || 0) { alert('first');
+            
+        }
+        // solution : first
+        if (-1 && 0) { alert('second');
+            
+        }
+        // solution : aucune alert
+        if (null ||-1 && 1) { alert('third');
+            
+        }
+        // solution : third
+    </script>
+</body>
+</html>
